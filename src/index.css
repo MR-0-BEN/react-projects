@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset CSS */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+li,
+figure,
+figcaption,
+blockquote,
+fieldset,
+legend,
+button,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove outline on focused elements */
+:focus {
+  outline: 0;
+}
+
+/* Accordion */
+.wrapper {
+  @apply flex h-[100vh] w-[100vw] justify-center items-center flex-col;
+}
+.accordion {
+  @apply w-[500px] ;
+}
+.button {
+    @apply px-3 py-4 bg-[#714101] mb-3 text-white text-xl block mx-auto
+}
+.item {
+  @apply bg-[#714101] mb-3 py-3 px-6;
+}
+.title {
+  @apply text-white flex justify-between items-center cursor-pointer text-xl mb-1
+}
+.content {
+  @apply text-white h-auto text-base;
+}
+
+/* Random color */
+.btn-color {
+    @apply bg-slate-300 px-4 py-2 m-2 rounded-lg 
+}
