@@ -4,7 +4,7 @@ const LoadMoreData = () => {
   const [loading, setLoading] = useState(false)
   const [products, setProducts] = useState([])
   const [count, setCount] = useState(0)
-  const [disableButton, setDisableButton] = useState(false)
+  // const [disableButton, setDisableButton] = useState(false)
 
   const fetchProducts = async () => {
     try {
@@ -31,11 +31,11 @@ const LoadMoreData = () => {
   useEffect(() => {
     fetchProducts()
   }, [count])
-  useEffect(() => {
-    if (products.length === 100) {
-      setDisableButton(true)
-    }
-  }, [products])
+  // useEffect(() => {
+  //   if (products.length === 100) {
+  //     setDisableButton(true)
+  //   }
+  // }, [products])
 
   if (loading) {
     return <div className="text-center">Loading...</div>
@@ -63,17 +63,19 @@ const LoadMoreData = () => {
       </div>
       <div className="button-container text-center">
         <button
-          disabled={disableButton}
+          disabled={products.length === 100 ? true : false}
           onClick={() => setCount(count + 1)}
           className={
-            disableButton
+            products.length === 100
               ? `py-2 px-5 rounded-xl bg-slate-700 cursor-not-allowed`
               : `py-2 px-5 rounded-xl bg-slate-300 cursor-pointer`
           }>
           load more products
         </button>
         <div>
-          {disableButton ? <p>you have reached to 100 Product</p> : null}
+          {products.length === 100 ? (
+            <p>you have reached to 100 Product</p>
+          ) : null}
         </div>
       </div>
     </div>
