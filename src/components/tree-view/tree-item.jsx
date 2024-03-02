@@ -10,9 +10,8 @@ const TreeItem = ({ treeItem }) => {
       [getCurrentLabel]: !displayCurrentChildren[getCurrentLabel],
     })
   }
-  useEffect(() => {
-    console.log(displayCurrentChildren)
-  }, [displayCurrentChildren])
+
+  console.log(displayCurrentChildren)
 
   return (
     <li className="m-5">
