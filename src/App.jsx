@@ -6,6 +6,7 @@ import LoadMoreData from './components/load-more-data'
 import TreeView from './components/tree-view'
 import treeData from './components/tree-view/data'
 import QRCodeGenerator from './components/QR-code-generator'
+import LightDarkMode from './components/light-and-dark-mode'
 
 
 function App() {
@@ -30,8 +31,10 @@ function App() {
       {/* <TreeView treeData={treeData} /> */}
 
       {/* QR code Generator component */}
-      <QRCodeGenerator/>
+      {/* <QRCodeGenerator/> */}
 
+      {/* Light Dark Mode component  */}
+      <LightDarkMode/>
     </>
   )
 }
