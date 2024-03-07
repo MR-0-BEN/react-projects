@@ -16,7 +16,7 @@ const LightDarkMode = () => {
           <p className="text-4xl text-black dark:text-white">Hello World !</p>
           <button
             type="button"
-            className="border p-3 rounded-lg font-semibold cursor-pointer text-black dark:text-white  bg-white dark:bg-black"
+            className="border p-3 rounded-lg font-semibold cursor-pointer dark:bg-white dark:text-black  text-white   bg-black"
             onClick={handleToggleTheme}>
             Change Theme
           </button>
