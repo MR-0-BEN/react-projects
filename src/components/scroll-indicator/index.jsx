@@ -57,7 +57,7 @@ const ScrollIndicator = ({ url, limit }) => {
     <div>
       <div className="top-container fixed top-0 z-[1] w-full text-center bg-[#014f0b]">
         <h1 className="text-white p-3 text-2xl font-semibold">
-          Data indicator
+          Custom Scroll Indicator
         </h1>
         <div className="scroll-bar-tracking-container w-full h-2 bg-[#aaf900] ">
           <div

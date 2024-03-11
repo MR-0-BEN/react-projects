@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* Reset CSS */
 
 /* Box sizing rules */
@@ -12,7 +10,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 
 /* Remove default margin and padding */
 body,
@@ -62,16 +59,16 @@ body {
   @apply flex h-[100vh] w-[100vw] justify-center items-center flex-col;
 }
 .accordion {
-  @apply w-[500px] ;
+  @apply w-[500px];
 }
 .button {
-    @apply px-3 py-4 bg-[#714101] mb-3 text-white text-xl block mx-auto
+  @apply px-3 py-4 bg-[#714101] mb-3 text-white text-xl block mx-auto;
 }
 .item {
   @apply bg-[#714101] mb-3 py-3 px-6;
 }
 .title {
-  @apply text-white flex justify-between items-center cursor-pointer text-xl mb-1
+  @apply text-white flex justify-between items-center cursor-pointer text-xl mb-1;
 }
 .content {
   @apply text-white h-auto text-base;
@@ -79,5 +76,11 @@ body {
 
 /* Random color */
 .btn-color {
-    @apply bg-slate-300 px-4 py-2 m-2 rounded-lg 
+  @apply bg-slate-300 px-4 py-2 m-2 rounded-lg;
+}
+
+/* Custom tab */
+
+.tabNumber {
+  @apply  text-white  px-3 py-1 capitalize text-3xl font-bold text-center cursor-pointer;
 }
