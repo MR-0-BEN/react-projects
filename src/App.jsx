@@ -9,7 +9,7 @@ import QRCodeGenerator from './components/QR-code-generator'
 import LightDarkMode from './components/light-and-dark-mode'
 import ScrollIndicator from './components/scroll-indicator'
 import { CustomTabs } from './components/custom-tabs'
-
+import ModelTest from './components/custom-model/modelTest'
 
 function App() {
   return (
@@ -42,7 +42,10 @@ function App() {
       {/* <ScrollIndicator url={"https://dummyjson.com/products?limit="} limit={100} /> */}
 
       {/* Tabs custom component */}
-      <CustomTabs />
+      {/* <CustomTabs /> */}
+
+      {/* Custom Model  */}
+      <ModelTest/>
     </>
   )
 }

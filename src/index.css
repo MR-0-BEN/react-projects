@@ -82,5 +82,23 @@ body {
 /* Custom tab */
 
 .tabNumber {
-  @apply  text-white  px-3 py-1 capitalize text-3xl font-bold text-center cursor-pointer;
+  @apply text-white  px-3 py-1 capitalize text-3xl font-bold text-center cursor-pointer;
+}
+
+/* custom popup model */
+
+.popup-animation {
+  animation-name: animateModal;
+  animation-duration: 0.5s ;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

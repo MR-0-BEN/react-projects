@@ -5,8 +5,8 @@ const Tabs = ({ tabsContent }) => {
 
   console.log(tabsContent[currentTabIndex].content)
   return (
-    <div className="wrapper p-2 ">
-      <div className="heading flex justify-center mb-3">
+    <div className=" p-2 items-start">
+      <div className=" flex justify-center  mb-3">
         {tabsContent.map((tab, index) => {
           return (
             <div
@@ -22,7 +22,7 @@ const Tabs = ({ tabsContent }) => {
           )
         })}
       </div>
-      <div className=" text-black py-5 px-2 h-[300px] overflow-auto bg-white">
+      <div className=" text-black py-5 px-2 h-[300px] overflow-auto bg-white text-center">
         {tabsContent[currentTabIndex] && tabsContent[currentTabIndex].content}
       </div>
     </div>
