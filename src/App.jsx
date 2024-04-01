@@ -10,6 +10,7 @@ import LightDarkMode from './components/light-and-dark-mode'
 import ScrollIndicator from './components/scroll-indicator'
 import { CustomTabs } from './components/custom-tabs'
 import ModelTest from './components/custom-model/modelTest'
+import GithubProfileFinder from './components/github-profile-finder'
 
 function App() {
   return (
@@ -45,7 +46,10 @@ function App() {
       {/* <CustomTabs /> */}
 
       {/* Custom Model  */}
-      <ModelTest/>
+      {/* <ModelTest/> */}
+
+      {/* Github profile finder Component  */}
+      <GithubProfileFinder />
     </>
   )
 }
