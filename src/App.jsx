@@ -11,6 +11,7 @@ import ScrollIndicator from './components/scroll-indicator'
 import { CustomTabs } from './components/custom-tabs'
 import ModelTest from './components/custom-model/modelTest'
 import GithubProfileFinder from './components/github-profile-finder'
+import SearchAutoComplete from "./components/search-auto-complete"
 
 function App() {
   return (
@@ -49,7 +50,10 @@ function App() {
       {/* <ModelTest/> */}
 
       {/* Github profile finder Component  */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      {/*Search auto complete Component */}
+      <SearchAutoComplete/>
     </>
   )
 }
