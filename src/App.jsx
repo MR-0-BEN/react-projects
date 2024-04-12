@@ -12,6 +12,7 @@ import { CustomTabs } from './components/custom-tabs'
 import ModelTest from './components/custom-model/modelTest'
 import GithubProfileFinder from './components/github-profile-finder'
 import SearchAutoComplete from "./components/search-auto-complete"
+import TicTacToe from './components/tic-tac-toe'
 
 function App() {
   return (
@@ -53,7 +54,11 @@ function App() {
       {/* <GithubProfileFinder /> */}
 
       {/*Search auto complete Component */}
-      <SearchAutoComplete/>
+      {/* <SearchAutoComplete/> */}
+
+      {/* Tic Tac Toe Component  */}
+      <TicTacToe/>
+
     </>
   )
 }
