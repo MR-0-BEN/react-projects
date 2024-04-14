@@ -16,6 +16,7 @@ import TicTacToe from './components/tic-tac-toe'
 import FeatureFlagsGlobalContext from './components/feature-flag/context'
 import FeatureFlags from './components/feature-flag'
 import UseFetchHook from './components/use-fetch/test'
+import UseOnclickOutsideTest from './components/use-outside-click/test'
 
 function App() {
   return (
@@ -68,8 +69,10 @@ function App() {
       </FeatureFlagsGlobalContext> */}
 
       {/* useFetch - Custom hook */}
-      <UseFetchHook/>
+      {/* <UseFetchHook/> */}
 
+      {/* Use onClick Outside hook */}
+      <UseOnclickOutsideTest/>
     </>
   )
 }
