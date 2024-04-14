@@ -13,6 +13,8 @@ import ModelTest from './components/custom-model/modelTest'
 import GithubProfileFinder from './components/github-profile-finder'
 import SearchAutoComplete from "./components/search-auto-complete"
 import TicTacToe from './components/tic-tac-toe'
+import FeatureFlagsGlobalContext from './components/feature-flag/context'
+import FeatureFlags from './components/feature-flag'
 
 function App() {
   return (
@@ -57,7 +59,12 @@ function App() {
       {/* <SearchAutoComplete/> */}
 
       {/* Tic Tac Toe Component  */}
-      <TicTacToe/>
+      {/* <TicTacToe/> */}
+
+      {/* Feature Flag Implementation  */}
+      <FeatureFlagsGlobalContext>
+        <FeatureFlags/>
+      </FeatureFlagsGlobalContext>
 
     </>
   )
